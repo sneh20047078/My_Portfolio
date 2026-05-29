@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sneha Suresh— Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── NAVIGATION ── -->
+  <div id="top"></div>
+  <header class="nav">
+    <div class="brand">SS<span class="dot">.</span></div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-line"></div>
+  </header>
+
+  <!-- ── HERO ── -->
+  <section id="home" class="hero">
+    <div class="hero-noise"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow"><i class="fa-solid fa-circle-dot"></i> Available for opportunities</p>
+      <h1 class="hero-title">Hi, I'm <span class="highlight">Sneha Suresh</span></h1>
+      <p class="hero-sub">Junior Cloud &amp; DevOps Engineer — I build cloud-native apps and deploy them reliably on AWS.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#projects"><i class="fa-solid fa-rocket"></i> View Projects</a>
+        <a class="btn btn-ghost" href="#contact">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero-badge">
+      <i class="fa-brands fa-aws"></i>
+      <span>AWS Hosted</span>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section id="about" class="about section-pad">
+    <div class="section-label">01 / About</div>
+    <div class="about-grid">
+      <div class="about-text">
+        <h2>Who I am</h2>
+        <p>I'm a cloud computing &amp; DevOps enthusiast learning to architect and deploy scalable web infrastructure. I enjoy turning complex infrastructure requirements into elegant, automated solutions.</p>
+        <p>Currently studying cloud technologies and building hands-on projects using AWS, Docker, and CI/CD pipelines.</p>
+      </div>
+      <div class="about-skills">
+        <div class="skill-tag"><i class="fa-brands fa-aws"></i> AWS S3 &amp; CloudFront</div>
+        <div class="skill-tag"><i class="fa-brands fa-docker"></i> Docker</div>
+        <div class="skill-tag"><i class="fa-solid fa-code-branch"></i> Git &amp; GitHub</div>
+        <div class="skill-tag"><i class="fa-solid fa-terminal"></i> Bash / CLI</div>
+        <div class="skill-tag"><i class="fa-solid fa-shield-halved"></i> IAM &amp; Policies</div>
+        <div class="skill-tag"><i class="fa-solid fa-globe"></i> HTML / CSS</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ── -->
+  <section id="projects" class="projects section-pad">
+    <div class="section-label">02 / Projects</div>
+    <h2 class="section-title">What I've built</h2>
+    <div class="cards">
+
+      <article class="card">
+        <div class="card-icon"><i class="fa-brands fa-aws"></i></div>
+        <div class="card-tag">Cloud Hosting</div>
+        <h3>Static Portfolio on S3 + CloudFront</h3>
+        <p>Deployed a responsive portfolio site to AWS S3 with a CloudFront CDN, HTTPS redirect, and custom bucket policies. Synced via AWS CLI.</p>
+        <div class="card-tech">
+          <span>S3</span><span>CloudFront</span><span>IAM</span><span>HTML/CSS</span>
+        </div>
+        <a class="card-link" href="#" aria-label="View project"><i class="fa-brands fa-github"></i> GitHub</a>
+      </article>
+
+      <article class="card">
+        <div class="card-icon"><i class="fa-brands fa-docker"></i></div>
+        <div class="card-tag">DevOps</div>
+        <h3>Dockerized Flask App + CI Pipeline</h3>
+        <p>Containerised a Flask app with Docker, set up a GitHub Actions CI pipeline that builds and tests on every push to main.</p>
+        <div class="card-tech">
+          <span>Docker</span><span>GitHub Actions</span><span>Flask</span>
+        </div>
+        <a class="card-link" href="#" aria-label="View project"><i class="fa-brands fa-github"></i> GitHub</a>
+      </article>
+
+      <article class="card">
+        <div class="card-icon"><i class="fa-solid fa-layer-group"></i></div>
+        <div class="card-tag">Infrastructure as Code</div>
+        <h3>AWS Infrastructure with Terraform</h3>
+        <p>Provisioned an S3 bucket, CloudFront distribution, and IAM policies using Terraform modules. Stored remote state in S3 + DynamoDB lock.</p>
+        <div class="card-tech">
+          <span>Terraform</span><span>AWS</span><span>IaC</span>
+        </div>
+        <a class="card-link" href="#" aria-label="View project"><i class="fa-brands fa-github"></i> GitHub</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ── CONTACT / FOOTER ── -->
+  <footer id="contact" class="footer">
+    <div class="footer-inner">
+      <div class="section-label light">03 / Contact</div>
+      <h2 class="footer-title">Let's work together</h2>
+      <p class="footer-sub">Open to internships, entry-level cloud &amp; DevOps roles, and collaborations.</p>
+      <a class="btn btn-primary" href="mailto:you@example.com"><i class="fa-solid fa-paper-plane"></i> sureshsneha799@gmail.com</a>
+      <div class="socials">
+        <a href="https://github.com/sneh20047078" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/sneha-suresh-608b08253/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://x.com/snehsp04" target="_blank" rel="noopener noreferrer" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+    <div class="footer-bar">
+      <span>© 2026 </span>
+      <a href="#top"><i class="fa-solid fa-arrow-up"></i> Back to top</a>
+    </div>
+  </footer>
+
+</body>
+</html>
