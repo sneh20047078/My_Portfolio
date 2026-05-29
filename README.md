@@ -5,8 +5,6 @@ A polished single-page portfolio built with HTML and CSS, designed for AWS stati
 ## Live URL
 > `https://<your-cloudfront-id>.cloudfront.net`
 
-> Update this URL after you deploy to CloudFront or S3.
-
 ---
 
 ## Project Files
@@ -89,10 +87,5 @@ Open the S3 website endpoint shown in the bucket hosting settings.
 
 ---
 
-## Notes
-- Replace placeholder values like bucket names and CloudFront origin URLs after deployment.
-- Add screenshots of the CloudFront distribution, S3 bucket policy, and the hosted site for submission.
-
----
 
 *© 2026 Sneha Suresh*
