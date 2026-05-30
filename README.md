@@ -88,7 +88,7 @@ Open: `http://snehasuresh-portfolio-022266408605-ap-south-1-an.s3-website.ap-sou
 https://d30ll7dxewuby5.cloudfront.net
 ```
 
-### 9. Optional: Custom domain with Route 53
+### 9. Custom domain with Route 53
 - Request an ACM certificate in `us-east-1` for your domain
 - Add certificate and domain to CloudFront alternate domain names
 - Create `A` (Alias) record in Route 53 pointing to CloudFront distribution
