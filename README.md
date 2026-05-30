@@ -3,7 +3,14 @@
 A polished single-page portfolio built with HTML and CSS, designed for AWS static hosting and CDN deployment.
 
 ## Live URL
-> `https://<your-cloudfront-id>.cloudfront.net`
+> **CloudFront:** https://d30ll7dxewuby5.cloudfront.net
+
+> **S3 Website Endpoint:** http://snehasuresh-portfolio-022266408605-ap-south-1-an.s3-website.ap-south-1.amazonaws.com
+
+---
+
+## GitHub Repository
+> https://github.com/sneh20047078/My_Portfolio
 
 ---
 
@@ -33,16 +40,17 @@ git commit -m "Initial portfolio website"
 ```
 
 ### 2. GitHub
-Push this repo to GitHub so version history is visible.
+```bash
+git remote add origin https://github.com/sneh20047078/My_Portfolio.git
+git push -u origin main
+```
 
 ### 3. Create S3 bucket
-1. Open AWS S3 and create a new bucket.
-2. Use a unique name like `sneha-portfolio`.
-3. Disable block public access for the bucket so static website hosting can work.
-4. Enable **Static website hosting** and set the index document to `index.html`.
+1. Open AWS S3 and create a new bucket: `snehasuresh-portfolio-022266408605-ap-south-1-an`
+2. Disable block public access.
+3. Enable **Static website hosting** → Index document: `index.html`.
 
-### 4. Add public read policy
-Use a bucket policy like this under **Permissions → Bucket Policy**:
+### 4. Add bucket policy for public read access
 ```json
 {
   "Version": "2012-10-17",
@@ -52,31 +60,39 @@ Use a bucket policy like this under **Permissions → Bucket Policy**:
       "Effect": "Allow",
       "Principal": "*",
       "Action": "s3:GetObject",
-      "Resource": "arn:aws:s3:::your-bucket-name/*"
+      "Resource": "arn:aws:s3:::snehasuresh-portfolio-022266408605-ap-south-1-an/*"
     }
   ]
 }
 ```
 
-### 5. Upload files
+### 5. Upload files to S3
 ```bash
-aws s3 sync . s3://your-bucket-name --exclude ".git/*"
+aws s3 cp index.html s3://snehasuresh-portfolio-022266408605-ap-south-1-an/
+aws s3 cp styles.css s3://snehasuresh-portfolio-022266408605-ap-south-1-an/
 ```
 
-### 6. Verify S3 hosting
-Open the S3 website endpoint shown in the bucket hosting settings.
+### 6. Verify S3 website endpoint
+Open: `http://snehasuresh-portfolio-022266408605-ap-south-1-an.s3-website.ap-south-1.amazonaws.com`
 
 ### 7. Create CloudFront distribution
-1. In CloudFront, create a distribution using the S3 website endpoint as the origin.
-2. Set **Redirect HTTP to HTTPS**.
-3. Set **Default root object** to `index.html`.
-4. Choose TLSv1.2_2021 or later.
+1. Origin domain: S3 website endpoint (not the bucket ARN)
+2. Origin protocol policy: **HTTP Only**
+3. Viewer protocol policy: **Redirect HTTP to HTTPS**
+4. Default root object: `index.html`
+5. Minimum TLS: `TLSv1.2_2021`
+6. Create and wait for deployment
 
-### 8. Optional custom domain
-- Request an ACM certificate in `us-east-1`.
-- Configure CloudFront with your domain and add DNS records in Route 53.
+### 8. Test CloudFront
+```
+https://d30ll7dxewuby5.cloudfront.net
+```
 
----
+### 9. Optional: Custom domain with Route 53
+- Request an ACM certificate in `us-east-1` for your domain
+- Add certificate and domain to CloudFront alternate domain names
+- Create `A` (Alias) record in Route 53 pointing to CloudFront distribution
+- Wait for distribution to deploy
 
 ## What this portfolio includes
 - Hero section with CTA buttons
