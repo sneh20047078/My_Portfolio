@@ -100,37 +100,6 @@ https://d30ll7dxewuby5.cloudfront.net
 
 ## Screenshots
 
-- **CloudFront distribution (Deployed):**
-  ![CloudFront status](assets/images/cloudfront.png)
-- **S3 bucket policy:**
-  ![S3 policy](assets/images/s3-policy.png)
-- **Live site (HTTPS):**
-  ![Live site](assets/images/live-site.png)
-
-Add screenshots locally then push to GitHub:
-
-PowerShell:
-```powershell
-cd "C:\Users\PC\Documents\AWS1"
-mkdir -Force assets\images
-Copy-Item "C:\path\to\cloudfront.png" assets\images\cloudfront.png
-Copy-Item "C:\path\to\s3-policy.png" assets\images\s3-policy.png
-Copy-Item "C:\path\to\live-site.png" assets\images\live-site.png
-git add assets/images/* README.md
-git commit -m "Add screenshots to README"
-git push
-```
-
-Git Bash / WSL:
-```bash
-cd /c/Users/PC/Documents/AWS1
-mkdir -p assets/images
-cp /c/path/to/cloudfront.png assets/images/cloudfront.png
-cp /c/path/to/s3-policy.png assets/images/s3-policy.png
-cp /c/path/to/live-site.png assets/images/live-site.png
-git add assets/images/* README.md
-git commit -m "Add screenshots to README"
-git push
-```
+ 
 
 *© 2026 Sneha Suresh*
