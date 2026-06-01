@@ -97,9 +97,12 @@ https://d30ll7dxewuby5.cloudfront.net
 
 ---
 
-
 ## Screenshots
 
- 
+![CloudFront status](assets/Screenshot%202026-05-30%20214915.png)
+![S3 policy](assets/Screenshot%202026-05-30%20214953.png)
+![Live site](assets/Screenshot%202026-05-30%20213339.png)
+
+---
 
 *© 2026 Sneha Suresh*
