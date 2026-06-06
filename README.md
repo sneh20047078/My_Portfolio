@@ -88,6 +88,35 @@ Open: `http://snehasuresh-portfolio-022266408605-ap-south-1-an.s3-website.ap-sou
 https://d30ll7dxewuby5.cloudfront.net
 ```
 
+## Docker Deployment (Task 2)
+This repository now includes a `Dockerfile` to run the portfolio inside an Nginx container.
+
+### Build the Docker image
+```bash
+docker build -t portfolio-website .
+```
+
+### Run the website locally in Docker
+```bash
+docker run -d -p 8080:80 portfolio-website
+```
+
+Open your browser at:
+```text
+http://localhost:8080
+```
+
+### Optional cloud VM deployment
+1. Provision a Linux VM (AWS EC2, Azure VM, Google Cloud VM).
+2. Install Docker on the VM.
+3. Copy the project files to the VM.
+4. Build and run the container on the VM:
+```bash
+docker build -t portfolio-website .
+docker run -d -p 80:80 portfolio-website
+```
+5. Open the VM public IP in a browser.
+
 ## What this portfolio includes
 - Hero section with CTA buttons
 - About section with skills and description
