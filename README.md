@@ -145,7 +145,6 @@ http://13.232.79.210
 ![Task 1 live portfolio](assets/Screenshot%202026-05-30%20213339.png)
 
 ### Task 2: EC2 Docker deployment
-![Task 2 Docker build](assets/Screenshot%202026-06-01%20215301.png)
 ![Task 2 Docker run](assets/Screenshot%202026-06-01%20215722.png)
 ![Task 2 live site verification](assets/Screenshot%202026-06-06%20165100.png)
 ![Task 2 container status](assets/Screenshot%202026-06-06%20171134.png)
