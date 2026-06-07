@@ -1,6 +1,6 @@
-# Static Portfolio — AWS S3 + CloudFront
+# Static Portfolio — AWS S3 + CloudFront + EC2 Docker
 
-A polished single-page portfolio built with HTML and CSS, designed for AWS static hosting and CDN deployment.
+A polished single-page portfolio built with HTML and CSS, designed for AWS static hosting, CDN distribution, and Docker deployment on an EC2 VM.
 
 ## Live URL
 > **CloudFront:** https://d30ll7dxewuby5.cloudfront.net
@@ -8,6 +8,8 @@ A polished single-page portfolio built with HTML and CSS, designed for AWS stati
 > **S3 Website Endpoint:** http://snehasuresh-portfolio-022266408605-ap-south-1-an.s3-website.ap-south-1.amazonaws.com
 
 > **Live EC2 Docker Deployment:** http://13.232.79.210
+
+> **Deployment status:** EC2 Docker deployment is running and serving the portfolio on the public IP above.
 
 ---
 
@@ -19,6 +21,8 @@ A polished single-page portfolio built with HTML and CSS, designed for AWS stati
 ## Project Files
 - `index.html`
 - `styles.css`
+- `Dockerfile`
+- `.dockerignore`
 - `README.md`
 
 ---
@@ -108,7 +112,7 @@ Open your browser at:
 http://localhost:8080
 ```
 
-### Optional cloud VM deployment
+### Cloud VM deployment
 1. Provision a Linux VM (AWS EC2, Azure VM, Google Cloud VM).
 2. Install Docker on the VM.
 3. Copy the project files to the VM.
@@ -119,7 +123,7 @@ docker run -d -p 80:80 portfolio-website
 ```
 5. Open the VM public IP in a browser.
 
-For this portfolio, the live EC2 deployment is available at:
+This portfolio is already deployed on EC2 at:
 ```text
 http://13.232.79.210
 ```
