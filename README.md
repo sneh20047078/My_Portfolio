@@ -139,9 +139,14 @@ http://13.232.79.210
 
 ## Screenshots
 
+### Task 2: EC2 Docker deployment
+![Task 2 live EC2 deployment](assets/Screenshot%202026-05-30%20213339.png)
+
+### CloudFront Distribution
 ![CloudFront status](assets/Screenshot%202026-05-30%20214915.png)
+
+### S3 Bucket Policy
 ![S3 policy](assets/Screenshot%202026-05-30%20214953.png)
-![Live site](assets/Screenshot%202026-05-30%20213339.png)
 
 ---
 
