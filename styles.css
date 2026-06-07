@@ -242,6 +242,7 @@ img { display: block; max-width: 100%; }
   position: absolute; inset: 0;
   background: linear-gradient(135deg, rgba(124,111,255,0.04), transparent);
   opacity: 0; transition: opacity 0.22s;
+  pointer-events: none;
 }
 .card:hover { transform: translateY(-4px); border-color: rgba(124,111,255,0.3); box-shadow: 0 16px 40px rgba(0,0,0,0.4); }
 .card:hover::before { opacity: 1; }
@@ -276,6 +277,7 @@ img { display: block; max-width: 100%; }
   font-size: 0.82rem; font-weight: 500;
   color: var(--accent);
   transition: color 0.2s;
+  cursor: pointer;
 }
 .card-link:hover { color: #9488ff; }
 
