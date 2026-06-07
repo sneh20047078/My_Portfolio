@@ -7,6 +7,8 @@ A polished single-page portfolio built with HTML and CSS, designed for AWS stati
 
 > **S3 Website Endpoint:** http://snehasuresh-portfolio-022266408605-ap-south-1-an.s3-website.ap-south-1.amazonaws.com
 
+> **Live EC2 Docker Deployment:** http://13.232.79.210
+
 ---
 
 ## GitHub Repository
@@ -116,6 +118,11 @@ docker build -t portfolio-website .
 docker run -d -p 80:80 portfolio-website
 ```
 5. Open the VM public IP in a browser.
+
+For this portfolio, the live EC2 deployment is available at:
+```text
+http://13.232.79.210
+```
 
 ## What this portfolio includes
 - Hero section with CTA buttons
