@@ -10,14 +10,7 @@ A polished single-page portfolio built with HTML and CSS, designed for AWS stati
 
 - **CloudFront (Task 1):** https://d30ll7dxewuby5.cloudfront.net
 - **S3 Website Endpoint (Task 1):** http://snehasuresh-portfolio-022266408605-ap-south-1-an.s3-website.ap-south-1.amazonaws.com
-- **EC2 Docker deployment (Task 2):** not live — see [Notes](#notes)
 - **Docker Hub (Task 3):** https://hub.docker.com/r/snehsp/portfolio-website
-
----
-
-## Notes
-
-> **EC2 instance (Task 2):** The EC2 deployment is currently **not live**. The instance was stopped to avoid ongoing AWS charges. Task 2 screenshots in this README document the completed deployment. You can still run the same Docker setup locally or pull the image from Docker Hub.
 
 ---
 
@@ -39,7 +32,7 @@ A polished single-page portfolio built with HTML and CSS, designed for AWS stati
 **Cloud & DevOps (Tasks 1–3)**
 - AWS S3 — static website hosting
 - AWS CloudFront — CDN and HTTPS
-- AWS EC2 — Docker container deployment (Task 2; instance stopped — see [Notes](#notes))
+- AWS EC2 — Docker container deployment
 - Docker + Nginx — containerized portfolio
 - Docker Hub — image registry
 - GitHub Actions — CI/CD pipeline (build and push on every push to `main`)
