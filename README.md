@@ -219,27 +219,29 @@ My_Portfolio/
 
 ## Screenshots
 
-### Task 3: CI/CD pipeline evidence
+### Task 1: CloudFront + S3
+
+[![CloudFront status](https://github.com/sneh20047078/My_Portfolio/raw/main/assets/Screenshot%202026-05-30%20214915.png)](https://github.com/sneh20047078/My_Portfolio/blob/main/assets/Screenshot%202026-05-30%20214915.png)
+
+[![S3 policy](https://github.com/sneh20047078/My_Portfolio/raw/main/assets/Screenshot%202026-05-30%20214953.png)](https://github.com/sneh20047078/My_Portfolio/blob/main/assets/Screenshot%202026-05-30%20214953.png)
+
+[![Task 1 live portfolio](https://github.com/sneh20047078/My_Portfolio/raw/main/assets/Screenshot%202026-05-30%20213339.png)](https://github.com/sneh20047078/My_Portfolio/blob/main/assets/Screenshot%202026-05-30%20213339.png)
+
+### Task 2: EC2 Docker deployment
+
+[![Task 2 Docker run](https://github.com/sneh20047078/My_Portfolio/raw/main/assets/Screenshot%202026-06-01%20215722.png)](https://github.com/sneh20047078/My_Portfolio/blob/main/assets/Screenshot%202026-06-01%20215722.png)
+
+[![Task 2 live site verification](https://github.com/sneh20047078/My_Portfolio/raw/main/assets/Screenshot%202026-06-06%20165100.png)](https://github.com/sneh20047078/My_Portfolio/blob/main/assets/Screenshot%202026-06-06%20165100.png)
+
+[![Task 2 container status](https://github.com/sneh20047078/My_Portfolio/raw/main/assets/Screenshot%202026-06-06%20171134.png)](https://github.com/sneh20047078/My_Portfolio/blob/main/assets/Screenshot%202026-06-06%20171134.png)
+
+### Task 3: CI/CD pipeline
 
 [![GitHub Actions — all runs green](https://github.com/sneh20047078/My_Portfolio/raw/main/assets/Screenshot%202026-06-10%20133812.png)](https://github.com/sneh20047078/My_Portfolio/blob/main/assets/Screenshot%202026-06-10%20133812.png)
 
 [![Pipeline steps — all green checkmarks](https://github.com/sneh20047078/My_Portfolio/raw/main/assets/Screenshot%202026-06-10%20133839.png)](https://github.com/sneh20047078/My_Portfolio/blob/main/assets/Screenshot%202026-06-10%20133839.png)
 
 [![Docker Hub tags page](https://github.com/sneh20047078/My_Portfolio/raw/main/assets/Screenshot%202026-06-10%20133857.png)](https://github.com/sneh20047078/My_Portfolio/blob/main/assets/Screenshot%202026-06-10%20133857.png)
-
-[![Portfolio running at localhost:8080](https://github.com/sneh20047078/My_Portfolio/raw/main/assets/Screenshot%202026-06-10%20133910.png)](https://github.com/sneh20047078/My_Portfolio/blob/main/assets/Screenshot%202026-06-10%20133910.png)
-
-[![GitHub Secrets page](https://github.com/sneh20047078/My_Portfolio/raw/main/assets/Screenshot%202026-06-10%20134800.png)](https://github.com/sneh20047078/My_Portfolio/blob/main/assets/Screenshot%202026-06-10%20134800.png)
-
-### Task 1: CloudFront + S3
-![CloudFront status](assets/Screenshot%202026-05-30%20214915.png)
-![S3 policy](assets/Screenshot%202026-05-30%20214953.png)
-![Task 1 live portfolio](assets/Screenshot%202026-05-30%20213339.png)
-
-### Task 2: EC2 Docker deployment
-![Task 2 Docker run](assets/Screenshot%202026-06-01%20215722.png)
-![Task 2 live site verification](assets/Screenshot%202026-06-06%20165100.png)
-![Task 2 container status](assets/Screenshot%202026-06-06%20171134.png)
 
 ---
 
