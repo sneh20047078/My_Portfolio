@@ -14,12 +14,6 @@ A polished single-page portfolio built with HTML and CSS, designed for AWS stati
 
 ---
 
-## Notes
-
-> EC2 instance stopped due to AWS cost.
-
----
-
 ## GitHub Repository
 
 > https://github.com/sneh20047078/My_Portfolio
@@ -283,6 +277,12 @@ My_Portfolio/
 - 3 project cards with GitHub icons
 - Contact/footer section with email button and social links
 - Smooth scrolling and responsive layout
+
+---
+
+## Notes
+
+> EC2 instance stopped due to AWS cost.
 
 ---
 
