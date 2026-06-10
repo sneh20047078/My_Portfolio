@@ -91,7 +91,13 @@ aws s3 cp styles.css s3://snehasuresh-portfolio-022266408605-ap-south-1-an/
 #### 7. Test CloudFront
 https://d30ll7dxewuby5.cloudfront.net
 
+### Screenshots
 
+[![CloudFront status](assets/Screenshot%202026-05-30%20214915.png)](https://github.com/sneh20047078/My_Portfolio/blob/main/assets/Screenshot%202026-05-30%20214915.png)
+[![S3 policy](assets/Screenshot%202026-05-30%20214953.png)](https://github.com/sneh20047078/My_Portfolio/blob/main/assets/Screenshot%202026-05-30%20214953.png)
+[![Live site](assets/Screenshot%202026-05-30%20213339.png)](https://github.com/sneh20047078/My_Portfolio/blob/main/assets/Screenshot%202026-05-30%20213339.png)
+
+---
 
 ## Task 2 — Docker Containerization on AWS EC2
 
@@ -128,7 +134,7 @@ docker run -d -p 80:80 portfolio-website
 
 5. Open the EC2 public IP in a browser
 
-
+---
 
 ## Task 3 — CI/CD Automation with GitHub Actions
 
@@ -183,7 +189,7 @@ jobs:
 | `DOCKER_USERNAME` | Docker Hub username (`snehsp`) |
 | `DOCKER_PASSWORD` | Docker Hub Access Token (Read, Write, Delete) |
 
-### Pull and run the image from Docker Hub
+### Pull and run from Docker Hub
 
 ```bash
 docker pull snehsp/portfolio-website:latest
@@ -192,10 +198,32 @@ docker run -d -p 8080:80 snehsp/portfolio-website:latest
 
 **Docker Hub:** https://hub.docker.com/r/snehsp/portfolio-website
 
+### Screenshots
+
+**1. GitHub Secrets — DOCKER_USERNAME and DOCKER_PASSWORD configured**
+![GitHub Secrets](assets/task3-secrets.png)
+
+**2. GitHub Actions — Successful Pipeline Runs**
+![GitHub Actions Runs](assets/task3-actions-runs.png)
+
+**3. Pipeline Run Summary — Status: Success, Duration: 17s**
+![Run Summary](assets/task3-run-summary.png)
+
+**4. Pipeline Steps — All Green (Checkout, Login, Build, Push)**
+![Pipeline Steps](assets/task3-pipeline-steps.png)
+
+**5. Docker Hub — portfolio-website:latest Pushed Successfully**
+![Docker Hub Tags](assets/task3-dockerhub-tags.png)
+
+**6. Docker Hub — Image Details (24.83 MB, linux/amd64)**
+![Docker Hub Detail](assets/task3-dockerhub-detail.png)
+
+**7. Portfolio Running at localhost:8080 from Docker Hub Image**
+![Local Validation](assets/task3-local-validation.png)
+
 ---
 
 ## Project Structure
-
 My_Portfolio/
 ├── index.html
 ├── styles.css
@@ -203,10 +231,12 @@ My_Portfolio/
 ├── .dockerignore
 ├── README.md
 ├── assets/
+│   └── (screenshots)
 └── .github/
 └── workflows/
 └── docker-ci.yml
 
+---
 
 ## What this portfolio includes
 
@@ -215,33 +245,6 @@ My_Portfolio/
 - 3 project cards with GitHub icons
 - Contact/footer section with email button and social links
 - Smooth scrolling and responsive layout
-
-
-## Screenshots
-
-### Task 1: CloudFront + S3
-
-[![CloudFront status](https://github.com/sneh20047078/My_Portfolio/raw/main/assets/Screenshot%202026-05-30%20214915.png)](https://github.com/sneh20047078/My_Portfolio/blob/main/assets/Screenshot%202026-05-30%20214915.png)
-
-[![S3 policy](https://github.com/sneh20047078/My_Portfolio/raw/main/assets/Screenshot%202026-05-30%20214953.png)](https://github.com/sneh20047078/My_Portfolio/blob/main/assets/Screenshot%202026-05-30%20214953.png)
-
-[![Task 1 live portfolio](https://github.com/sneh20047078/My_Portfolio/raw/main/assets/Screenshot%202026-05-30%20213339.png)](https://github.com/sneh20047078/My_Portfolio/blob/main/assets/Screenshot%202026-05-30%20213339.png)
-
-### Task 2: EC2 Docker deployment
-
-[![Task 2 Docker run](https://github.com/sneh20047078/My_Portfolio/raw/main/assets/Screenshot%202026-06-01%20215722.png)](https://github.com/sneh20047078/My_Portfolio/blob/main/assets/Screenshot%202026-06-01%20215722.png)
-
-[![Task 2 live site verification](https://github.com/sneh20047078/My_Portfolio/raw/main/assets/Screenshot%202026-06-06%20165100.png)](https://github.com/sneh20047078/My_Portfolio/blob/main/assets/Screenshot%202026-06-06%20165100.png)
-
-[![Task 2 container status](https://github.com/sneh20047078/My_Portfolio/raw/main/assets/Screenshot%202026-06-06%20171134.png)](https://github.com/sneh20047078/My_Portfolio/blob/main/assets/Screenshot%202026-06-06%20171134.png)
-
-### Task 3: CI/CD pipeline
-
-[![GitHub Actions — all runs green](https://github.com/sneh20047078/My_Portfolio/raw/main/assets/Screenshot%202026-06-10%20133812.png)](https://github.com/sneh20047078/My_Portfolio/blob/main/assets/Screenshot%202026-06-10%20133812.png)
-
-[![Pipeline steps — all green checkmarks](https://github.com/sneh20047078/My_Portfolio/raw/main/assets/Screenshot%202026-06-10%20133839.png)](https://github.com/sneh20047078/My_Portfolio/blob/main/assets/Screenshot%202026-06-10%20133839.png)
-
-[![Docker Hub tags page](https://github.com/sneh20047078/My_Portfolio/raw/main/assets/Screenshot%202026-06-10%20133857.png)](https://github.com/sneh20047078/My_Portfolio/blob/main/assets/Screenshot%202026-06-10%20133857.png)
 
 ---
 
