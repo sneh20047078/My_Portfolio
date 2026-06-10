@@ -8,9 +8,10 @@ A polished single-page portfolio built with HTML and CSS, designed for AWS stati
 
 ## Live URLs
 
-> **CloudFront:** https://d30ll7dxewuby5.cloudfront.net
-> **S3 Website Endpoint:** http://snehasuresh-portfolio-022266408605-ap-south-1-an.s3-website.ap-south-1.amazonaws.com
-> **Docker Hub:** https://hub.docker.com/r/snehsp/portfolio-website
+- **CloudFront (Task 1):** https://d30ll7dxewuby5.cloudfront.net
+- **S3 Website Endpoint (Task 1):** http://snehasuresh-portfolio-022266408605-ap-south-1-an.s3-website.ap-south-1.amazonaws.com
+- **EC2 Docker deployment (Task 2):** http://13.232.79.210
+- **Docker Hub (Task 3):** https://hub.docker.com/r/snehsp/portfolio-website
 
 ---
 
