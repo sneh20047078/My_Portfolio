@@ -114,21 +114,31 @@ Open your browser at:
 http://localhost:8080
 ```
 
-### Cloud VM deployment
-1. Provision a Linux VM (AWS EC2, Azure VM, Google Cloud VM).
-2. Install Docker on the VM.
-3. Copy the project files to the VM.
-4. Build and run the container on the VM:
-```bash
-docker build -t portfolio-website .
-docker run -d -p 80:80 portfolio-website
-```
-5. Open the VM public IP in a browser.
+### Cloud Deployment on AWS EC2
+**This portfolio is deployed and running on AWS EC2** at `http://13.232.79.210`
 
-This portfolio is already deployed on EC2 at:
-```text
-http://13.232.79.210
+**Instance Details:**
+- Instance ID: `i-04adbfbf5118f6b95`
+- Instance Type: `t3.micro`
+- Region: `ap-south-1` (Mumbai)
+- OS: Ubuntu 22.04 LTS
+- Container Status: Running (Nginx Alpine)
+
+**Deployment Steps:**
+1. Provision a Linux VM on AWS EC2 (t3.micro recommended for free tier).
+2. Configure security group to allow HTTP (port 80) and SSH (port 22).
+3. Install Docker on the VM.
+4. Copy the project files to the VM.
+5. Build and run the container on the VM:
+```bash
+sudo docker build -t my_portfolio .
+sudo docker run -d -p 80:80 --name my_portfolio my_portfolio
 ```
+6. Verify container is running:
+```bash
+sudo docker ps
+```
+7. Access the live site at the EC2 public IP.
 
 ## What this portfolio includes
 - Hero section with CTA buttons
