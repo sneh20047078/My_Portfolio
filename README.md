@@ -188,9 +188,9 @@ https://d30ll7dxewuby5.cloudfront.net
 
 
 
-[![CloudFront deployment view](assets/Screenshot%202026-05-30%20214915.png)](https://github.com/sneh20047078/My_Portfolio/blob/main/assets/Screenshot%202026-05-30%20214915.png)
+[![CloudFront distribution — S3 origin configured](assets/Screenshot%202026-05-30%20214915.png)](https://github.com/sneh20047078/My_Portfolio/blob/main/assets/Screenshot%202026-05-30%20214915.png)
 
-[![S3 public access policy](assets/Screenshot%202026-05-30%20214953.png)](https://github.com/sneh20047078/My_Portfolio/blob/main/assets/Screenshot%202026-05-30%20214953.png)
+[![S3 bucket — objects in portfolio bucket](assets/Screenshot%202026-05-30%20214953.png)](https://github.com/sneh20047078/My_Portfolio/blob/main/assets/Screenshot%202026-05-30%20214953.png)
 
 [![Live portfolio on CloudFront](assets/Screenshot%202026-05-30%20213339.png)](https://github.com/sneh20047078/My_Portfolio/blob/main/assets/Screenshot%202026-05-30%20213339.png)
 
@@ -452,7 +452,7 @@ docker run -d -p 8080:80 snehsp/portfolio-website:latest
 
 
 
-**7. Local validation  container running on localhost:8080**
+**7. Local validation — container running on localhost:8080**
 
 ![Local Validation](assets/task3-local-validation.png)
 
