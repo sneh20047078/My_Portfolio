@@ -1,4 +1,4 @@
-# Sneha Suresh — Portfolio
+﻿# Sneha Suresh â€” Portfolio
 
 A polished single-page portfolio built with HTML and CSS, designed for AWS static hosting, Docker containerization, and automated CI/CD deployment.
 
@@ -30,7 +30,7 @@ A polished single-page portfolio built with HTML and CSS, designed for AWS stati
 
 ---
 
-## Task 1 — Static Hosting on AWS S3 + CloudFront
+## Task 1 â€” Static Hosting on AWS S3 + CloudFront
 
 ### Deployment Steps
 
@@ -53,7 +53,7 @@ git push -u origin main
 
 1. Open AWS S3 and create a new bucket: `snehasuresh-portfolio-022266408605-ap-south-1-an`
 2. Disable block public access.
-3. Enable **Static website hosting** → Index document: `index.html`.
+3. Enable **Static website hosting** â†’ Index document: `index.html`.
 
 #### 4. Add bucket policy for public read access
 
@@ -93,13 +93,13 @@ https://d30ll7dxewuby5.cloudfront.net
 
 ### Screenshots
 
-[![CloudFront status](assets/Screenshot%202026-05-30%20214915.png)](https://github.com/sneh20047078/My_Portfolio/blob/main/assets/Screenshot%202026-05-30%20214915.png)
-[![S3 policy](assets/Screenshot%202026-05-30%20214953.png)](https://github.com/sneh20047078/My_Portfolio/blob/main/assets/Screenshot%202026-05-30%20214953.png)
-[![Live site](assets/Screenshot%202026-05-30%20213339.png)](https://github.com/sneh20047078/My_Portfolio/blob/main/assets/Screenshot%202026-05-30%20213339.png)
+[![CloudFront deployment view](assets/Screenshot%202026-05-30%20214915.png)](https://github.com/sneh20047078/My_Portfolio/blob/main/assets/Screenshot%202026-05-30%20214915.png)
+[![S3 public access policy](assets/Screenshot%202026-05-30%20214953.png)](https://github.com/sneh20047078/My_Portfolio/blob/main/assets/Screenshot%202026-05-30%20214953.png)
+[![Live portfolio on CloudFront](assets/Screenshot%202026-05-30%20213339.png)](https://github.com/sneh20047078/My_Portfolio/blob/main/assets/Screenshot%202026-05-30%20213339.png)
 
 ---
 
-## Task 2 — Docker Containerization on AWS EC2
+## Task 2 â€” Docker Containerization on AWS EC2
 
 This repository includes a `Dockerfile` to run the portfolio inside an Nginx container.
 
@@ -136,9 +136,9 @@ docker run -d -p 80:80 portfolio-website
 
 ---
 
-## Task 3 — CI/CD Automation with GitHub Actions
+## Task 3 â€” CI/CD Automation with GitHub Actions
 
-This repository includes a GitHub Actions CI/CD pipeline that automatically builds and pushes the Docker image to Docker Hub on every push to the `main` branch — no manual build or push needed.
+This repository includes a GitHub Actions CI/CD pipeline that automatically builds and pushes the Docker image to Docker Hub on every push to the `main` branch â€” no manual build or push needed.
 
 ### Workflow file: `.github/workflows/docker-ci.yml`
 
@@ -200,41 +200,41 @@ docker run -d -p 8080:80 snehsp/portfolio-website:latest
 
 ### Screenshots
 
-**1. GitHub Secrets — DOCKER_USERNAME and DOCKER_PASSWORD configured**
+**1. GitHub Secrets â€” Docker Hub credentials stored in GitHub Secrets**
 ![GitHub Secrets](assets/task3-secrets.png)
 
-**2. GitHub Actions — Successful Pipeline Runs**
+**2. GitHub Actions â€” successful workflow run on the main branch**
 ![GitHub Actions Runs](assets/task3-actions-runs.png)
 
-**3. Pipeline Run Summary — Status: Success, Duration: 17s**
+**3. Workflow summary â€” build and push completed successfully**
 ![Run Summary](assets/task3-run-summary.png)
 
-**4. Pipeline Steps — All Green (Checkout, Login, Build, Push)**
+**4. Pipeline steps â€” checkout, login, build, and push all passed**
 ![Pipeline Steps](assets/task3-pipeline-steps.png)
 
-**5. Docker Hub — portfolio-website:latest Pushed Successfully**
+**5. Docker Hub â€” latest image tag pushed successfully**
 ![Docker Hub Tags](assets/task3-dockerhub-tags.png)
 
-**6. Docker Hub — Image Details (24.83 MB, linux/amd64)**
+**6. Docker Hub image details â€” 24.83 MB, linux/amd64**
 ![Docker Hub Detail](assets/task3-dockerhub-detail.png)
 
-**7. Portfolio Running at localhost:8080 from Docker Hub Image**
+**7. Local validation — container running on localhost:8080**
 ![Local Validation](assets/task3-local-validation.png)
 
 ---
 
 ## Project Structure
 My_Portfolio/
-├── index.html
-├── styles.css
-├── Dockerfile
-├── .dockerignore
-├── README.md
-├── assets/
-│   └── (screenshots)
-└── .github/
-└── workflows/
-└── docker-ci.yml
+â”œâ”€â”€ index.html
+â”œâ”€â”€ styles.css
+â”œâ”€â”€ Dockerfile
+â”œâ”€â”€ .dockerignore
+â”œâ”€â”€ README.md
+â”œâ”€â”€ assets/
+â”‚   â””â”€â”€ (screenshots)
+â””â”€â”€ .github/
+â””â”€â”€ workflows/
+â””â”€â”€ docker-ci.yml
 
 ---
 
@@ -248,4 +248,5 @@ My_Portfolio/
 
 ---
 
-*© 2026 Sneha Suresh*
+*Â© 2026 Sneha Suresh*
+
