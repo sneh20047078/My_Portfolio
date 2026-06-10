@@ -1,3 +1,5 @@
+[![Docker CI Pipeline](https://github.com/sneh20047078/My_Portfolio/actions/workflows/docker-ci.yml/badge.svg)](https://github.com/sneh20047078/My_Portfolio/actions/workflows/docker-ci.yml)
+
 # Static Portfolio — AWS S3 + CloudFront + EC2 Docker
 
 A polished single-page portfolio built with HTML and CSS, designed for AWS static hosting, CDN distribution, and Docker deployment on an EC2 VM.
