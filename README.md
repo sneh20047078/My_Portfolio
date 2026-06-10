@@ -277,14 +277,14 @@ docker run -d -p 80:80 portfolio-website
 
 ### Screenshots
 
-**1. Docker container setup on EC2**
-[![Docker container setup on EC2](assets/Screenshot%202026-06-10%20133839.png)](https://github.com/sneh20047078/My_Portfolio/blob/main/assets/Screenshot%202026-06-10%20133839.png)
+**1. Docker image build — portfolio-website**
+[![Docker image build](assets/Screenshot%202026-06-01%20215722.png)](https://github.com/sneh20047078/My_Portfolio/blob/main/assets/Screenshot%202026-06-01%20215722.png)
 
-**2. Container run and access on the EC2 instance**
-[![Container run on EC2](assets/Screenshot%202026-06-10%20133857.png)](https://github.com/sneh20047078/My_Portfolio/blob/main/assets/Screenshot%202026-06-10%20133857.png)
+**2. Live portfolio on EC2 public IP**
+[![Live portfolio on EC2](assets/Screenshot%202026-06-06%20165100.png)](https://github.com/sneh20047078/My_Portfolio/blob/main/assets/Screenshot%202026-06-06%20165100.png)
 
-**3. Docker container status and local access**
-[![Docker container status](assets/Screenshot%202026-06-10%20133910.png)](https://github.com/sneh20047078/My_Portfolio/blob/main/assets/Screenshot%202026-06-10%20133910.png)
+**3. EC2 instance running — My portfolio**
+[![EC2 instance running](assets/Screenshot%202026-06-06%20171134.png)](https://github.com/sneh20047078/My_Portfolio/blob/main/assets/Screenshot%202026-06-06%20171134.png)
 
 ---
 
