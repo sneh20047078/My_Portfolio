@@ -94,10 +94,13 @@ https://d30ll7dxewuby5.cloudfront.net
 
 ### Screenshots
 
+**1. CloudFront distribution — S3 origin configured**
 [![CloudFront distribution — S3 origin configured](assets/Screenshot%202026-05-30%20214915.png)](https://github.com/sneh20047078/My_Portfolio/blob/main/assets/Screenshot%202026-05-30%20214915.png)
 
+**2. S3 bucket — objects in portfolio bucket**
 [![S3 bucket — objects in portfolio bucket](assets/Screenshot%202026-05-30%20214953.png)](https://github.com/sneh20047078/My_Portfolio/blob/main/assets/Screenshot%202026-05-30%20214953.png)
 
+**3. Live portfolio on CloudFront**
 [![Live portfolio on CloudFront](assets/Screenshot%202026-05-30%20213339.png)](https://github.com/sneh20047078/My_Portfolio/blob/main/assets/Screenshot%202026-05-30%20213339.png)
 
 ---
