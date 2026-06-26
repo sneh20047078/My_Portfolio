@@ -251,6 +251,26 @@ docker run -d -p 8080:80 snehsp/portfolio-website:latest
 ![Local Validation](assets/task3-local-validation.png)
 
 ---
+## Task 4 — Automated CD Pipeline with Nginx Reverse Proxy
+
+### Deployment Flow
+1. Developer pushes code to `main` branch
+2. GitHub Actions CI job builds Docker image and pushes to Docker Hub
+3. CD job SSHes into EC2, pulls latest image, restarts container
+4. Nginx reverse proxy routes public port 80 traffic to container on port 8080
+
+### Architecture
+Internet → EC2 Public IP:80 → Nginx → localhost:8080 → Docker Container → Nginx (inside) :80
+
+### Nginx Role
+Nginx acts as a reverse proxy — it receives all public traffic on port 80 and forwards it
+to the Docker container. This is production-standard: containers are never directly exposed.
+
+### CI/CD Architecture
+- CI: GitHub Actions builds and pushes the Docker image (triggered on every push)
+- CD: appleboy/ssh-action deploys the new image to EC2 via SSH key authentication
+- Secrets: VM credentials and Docker Hub tokens stored in GitHub Secrets (never in code)
+
 
 ## Project Structure
 
